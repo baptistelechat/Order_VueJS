@@ -1,19 +1,22 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Login :username="Baptiste"/>
+    <Product/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+  import Login from './components/Login.component.vue'
+  import Product from './components/Product.component.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  export default {
+    name: 'App',
+    components: {
+      Login,
+      Product
+    }
   }
-}
 </script>
 
 <style>
